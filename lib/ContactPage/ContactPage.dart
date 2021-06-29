@@ -4,16 +4,16 @@ import 'package:unicode_project/ContactPage/ContactList.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: contactPage(),
+    home: ContactPage(),
   ));
 }
 
-class contactPage extends StatefulWidget {
+class ContactPage extends StatefulWidget {
   @override
-  _contactPageState createState() => _contactPageState();
+  _ContactPageState createState() => _ContactPageState();
 }
 
-class _contactPageState extends State<contactPage> {
+class _ContactPageState extends State<ContactPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,7 +22,7 @@ class _contactPageState extends State<contactPage> {
         centerTitle: true,
         backgroundColor: Colors.teal,
       ),
-      body: contacts(),
+      body: Contacts(),
     );
   }
 }

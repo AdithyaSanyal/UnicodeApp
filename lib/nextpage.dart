@@ -3,12 +3,12 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:unicode_project/WeatherPage/screens/loading_screen.dart';
 import 'package:unicode_project/ContactPage/ContactPage.dart';
 
-class nextPage extends StatefulWidget {
+class NextPage extends StatefulWidget {
   @override
-  _nextPageState createState() => _nextPageState();
+  _NextPageState createState() => _NextPageState();
 }
 
-class _nextPageState extends State<nextPage> {
+class _NextPageState extends State<NextPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,7 +37,7 @@ class _nextPageState extends State<nextPage> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => contactPage(),
+                      builder: (context) => ContactPage(),
                     ),
                   );
                 },

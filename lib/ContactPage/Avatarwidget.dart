@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 
-class Avatar_widget extends StatelessWidget {
-  Avatar_widget({
+class AvatarWidget extends StatelessWidget {
+  AvatarWidget({
     @required this.text,
   });
   final text;

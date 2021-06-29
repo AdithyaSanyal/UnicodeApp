@@ -27,9 +27,9 @@ class Todo {
   Todo(this.name, this.description, this.phone);
 }
 
-class contacts extends StatelessWidget {
+class Contacts extends StatelessWidget {
   final List<Todo> todos;
-  contacts({this.todos});
+  Contacts({this.todos});
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +37,7 @@ class contacts extends StatelessWidget {
       itemCount: contactNames.length,
       itemBuilder: (context, index) {
         return ListTile(
-          leading: Avatar_widget(
+          leading: AvatarWidget(
             text: contactNames[index].description,
           ),
           title: Contact(
@@ -48,7 +48,7 @@ class contacts extends StatelessWidget {
             Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => contactDisplay(),
+                  builder: (context) => ContactDisplay(),
                   settings: RouteSettings(
                     arguments: contactNames[index],
                   ),
@@ -60,7 +60,7 @@ class contacts extends StatelessWidget {
   }
 }
 
-class contactDisplay extends StatelessWidget {
+class ContactDisplay extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Todo todo = ModalRoute.of(context).settings.arguments;

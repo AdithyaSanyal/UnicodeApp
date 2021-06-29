@@ -28,7 +28,6 @@ class _ApplicationState extends State<Application> {
   TextEditingController _phone = TextEditingController();
   TextEditingController _email = TextEditingController();
   DateTime selectedDate;
-  bool _enabled = false;
 
   final _formKey = GlobalKey<FormState>();
 
@@ -234,6 +233,7 @@ class _ApplicationState extends State<Application> {
                   padding: EdgeInsets.all(10),
                   child: TextFormField(
                     controller: _email..text = '',
+                    // ignore: missing_return
                     validator: (value) {
                       var flag = 0;
                       for (var i = 0; i < value.length; i++) {
@@ -270,6 +270,7 @@ class _ApplicationState extends State<Application> {
                   minWidth: 200,
                   height: 75,
                   buttonColor: Color(0xFF6db105),
+                  // ignore: deprecated_member_use
                   child: RaisedButton(
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(18.0),
@@ -278,7 +279,7 @@ class _ApplicationState extends State<Application> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => nextPage(),
+                          builder: (context) => NextPage(),
                         ),
                       );
                     },

@@ -19,7 +19,7 @@ class _CityScreenState extends State<CityScreen> {
             children: <Widget>[
               Align(
                 alignment: Alignment.topLeft,
-                child: FlatButton(
+                child: ElevatedButton(
                   onPressed: () {
                     Navigator.pop(context);
                   },
@@ -41,7 +41,7 @@ class _CityScreenState extends State<CityScreen> {
                   },
                 ),
               ),
-              FlatButton(
+              ElevatedButton(
                 onPressed: () {
                   Navigator.pop(context, cityName);
                 },
