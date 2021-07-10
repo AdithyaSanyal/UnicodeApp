@@ -1,5 +1,5 @@
 # adithya_sanyal
-
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/AdithyaSanyal/UnicodeApp/)
 A new Flutter project.
 
 ## Getting Started
